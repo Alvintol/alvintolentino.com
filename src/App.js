@@ -1,9 +1,10 @@
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <header>
       Header
+
       <div>nameplate</div>
       <div>skills</div>
       <div>projects</div>
