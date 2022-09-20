@@ -1,7 +1,11 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*html'],
+  future: {
+    // removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
+  },
+  content: ['./src/**/*.js', './src/*.js', './src/**/**/*.js'],
   preserveHtmlElements: false,
+  purge: [],
   theme: {
     screens: {
       sm: '480px',
@@ -14,5 +18,6 @@ module.exports = {
       }
     },
   },
+  variants: {},
   plugins: [],
 }
